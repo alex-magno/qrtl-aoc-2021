@@ -1,2 +1,3 @@
 # qrtl-aoc-2021
-AoC 2021 Solutions
+
+Advent of Code 2021 solution done by three friends, in three different languages.
