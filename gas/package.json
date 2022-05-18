@@ -1,0 +1,18 @@
+{
+  "name": "qrtl-aoc-2021-gas",
+  "version": "1.0.0",
+  "description": "Google Apps Script project to solve Advent of Code 2021 challenges",
+  "scripts": {
+    "open": "clasp open",
+    "pull": "clasp pull",
+    "push": "clasp push",
+    "watch": "yarn push --watch --force"
+  },
+  "author": "Victor Drumond",
+  "license": "ISC",
+  "dependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.47",
+    "gts": "^3.1.0"
+  }
+}

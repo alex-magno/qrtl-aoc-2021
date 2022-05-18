@@ -1,0 +1,21 @@
+{
+    "extends": "./node_modules/gts/tsconfig-google.json",
+    "compilerOptions": {
+        "module": "none",
+        "experimentalDecorators": true,
+        "lib": [ "esnext" ],
+        "target": "ES6",
+        "declaration": false,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "typeRoots": [ "node_modules/@types" ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "@types/**/*d.ts"
+    ],
+    "exclude": [
+        "node_modules/",
+        "dist/"
+    ]
+}
