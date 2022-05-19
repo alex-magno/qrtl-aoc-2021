@@ -10,8 +10,37 @@
 
 <body>
 
-    <h1><?!= hello ?></h1>
+    <header>
+        <h1>Advent of Code 2021</h1>
+    </header>
+
+    <!-- Day 1 -->
+    <section>
+        <h4>Day 1: Sonar Sweep</h4>
+        <!-- Description -->
+        <div></div>
+        <!-- Solution -->
+        <div>
+            <p>Solution:</p>
+            <button onclick="day1()">Run!</button>
+            <a href="<?!= solutionsFolderUrl ?>/Day1Problem.ts" target="_blank">See solution</a>
+        </div>
+        <!-- Output -->
+        <div id="d1-output"></div>
+    </section>
 
 </body>
+
+<script>
+
+    function day1() {
+        google.script.run.withSuccessHandler(renderResult).day1Problem();
+    }
+    
+    function renderResult(response) {
+        document.getElementById(`${response.challenge}-output`).innerHTML = response.result;
+    }
+
+</script>
 
 </html>
