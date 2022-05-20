@@ -26,7 +26,8 @@
             <a href="<?!= solutionsFolderUrl ?>/Day1Problem.ts" target="_blank">See solution</a>
         </div>
         <!-- Output -->
-        <div id="d1-output"></div>
+        <div id="d1-p1-output"></div>
+        <div id="d1-p2-output"></div>
     </section>
 
 </body>
@@ -38,7 +39,8 @@
     }
     
     function renderResult(response) {
-        document.getElementById(`${response.challenge}-output`).innerHTML = response.result;
+        document.getElementById(`${response.day}-p1-output`).innerHTML = response.partOneResult;
+        document.getElementById(`${response.day}-p2-output`).innerHTML = response.partTwoResult;
     }
 
 </script>

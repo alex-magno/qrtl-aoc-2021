@@ -5,10 +5,11 @@ function doGet() {
 }
 
 interface Solution {
-  challenge: string,
-  result: string
+  day: string,
+  partOneResult: string,
+  partTwoResult: string
 }
 
 function day1Problem(): Solution {
-  return new challenges.day1Problem().solve();
+  return new challenges.day1Problem(PROBLEM_1_DATA_URL).solve();
 }
