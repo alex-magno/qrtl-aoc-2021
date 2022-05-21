@@ -30,6 +30,22 @@
         <div id="d1-p2-output"></div>
     </section>
 
+    <!-- Day 2 -->
+    <section>
+        <h4>Day 2: Dive!</h4>
+        <!-- Description -->
+        <div></div>
+        <!-- Solution -->
+        <div>
+            <p>Solution:</p>
+            <button onclick="day2()">Run!</button>
+            <a href="<?!= solutionsFolderUrl ?>/Day2Problem.ts" target="_blank">See solution</a>
+        </div>
+        <!-- Output -->
+        <div id="d2-p1-output"></div>
+        <div id="d2-p2-output"></div>
+    </section>
+
 </body>
 
 <script>
@@ -37,7 +53,10 @@
     function day1() {
         google.script.run.withSuccessHandler(renderResult).day1Problem();
     }
-    
+    function day2() {
+        google.script.run.withSuccessHandler(renderResult).day2Problem();
+    }
+
     function renderResult(response) {
         document.getElementById(`${response.day}-p1-output`).innerHTML = response.partOneResult;
         document.getElementById(`${response.day}-p2-output`).innerHTML = response.partTwoResult;

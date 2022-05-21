@@ -13,3 +13,7 @@ interface Solution {
 function day1Problem(): Solution {
   return new challenges.day1Problem(PROBLEM_1_DATA_URL).solve();
 }
+
+function day2Problem(): Solution {
+  return new challenges.day2Problem(PROBLEM_2_DATA_URL).solve();
+}
