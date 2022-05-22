@@ -9,7 +9,7 @@ public class VerticalHorizontalPositionPart2 {
     public static void main(String[] args) throws FileNotFoundException {
 
 
-        Scanner scanner = new Scanner(new FileReader("src/VerticalHorizontalPosition/input"));
+        Scanner scanner = new Scanner(new FileReader("../challenges/day2/data/input.txt"));
 
         String[] navigationArray = new String[1000];
 
