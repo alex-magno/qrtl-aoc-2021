@@ -15,3 +15,11 @@ object IO:
         bufferedSource.close()
 
         element
+    
+    def fileToString(path: String): String =
+        val bufferedSource = Source.fromFile(path)
+        val element = bufferedSource.getLines.mkString("\n")
+        
+        bufferedSource.close()
+
+        element
