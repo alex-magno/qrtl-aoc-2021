@@ -23,3 +23,11 @@ object IO:
         bufferedSource.close()
 
         element
+
+object Transformer:
+    /**
+     * String to Int with exception handling.
+     * Returns -1 if the string is not a number.
+    */
+    def toInt(str: String): Int =
+        try {str.toInt} catch {case _: NumberFormatException => -1}
