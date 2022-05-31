@@ -17,3 +17,7 @@ function day1Problem(): Solution {
 function day2Problem(): Solution {
   return new challenges.day2Problem(PROBLEM_2_DATA_URL).solve();
 }
+
+function day3Problem(): Solution {
+  return new challenges.day3Problem(PROBLEM_3_DATA_URL).solve();
+}

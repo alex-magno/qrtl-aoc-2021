@@ -46,6 +46,22 @@
         <div id="d2-p2-output"></div>
     </section>
 
+    <!-- Day 3 -->
+    <section>
+        <h4>Day 3: Binary Diagnostic</h4>
+        <!-- Description -->
+        <div></div>
+        <!-- Solution -->
+        <div>
+            <p>Solution:</p>
+            <button onclick="day3()">Run!</button>
+            <a href="<?!= solutionsFolderUrl ?>/Day3Problem.ts" target="_blank">See solution</a>
+        </div>
+        <!-- Output -->
+        <div id="d3-p1-output"></div>
+        <div id="d3-p2-output"></div>
+    </section>
+
 </body>
 
 <script>
@@ -55,6 +71,9 @@
     }
     function day2() {
         google.script.run.withSuccessHandler(renderResult).day2Problem();
+    }
+    function day3() {
+        google.script.run.withSuccessHandler(renderResult).day3Problem();
     }
 
     function renderResult(response) {
